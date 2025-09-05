@@ -2,83 +2,162 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Gagan M | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gagan M Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+  <!-- Background animation -->
+  <canvas id="bgCanvas"></canvas>
+
+  <!-- Scroll to Top Button -->
+<button id="scrollTopBtn" title="Go to top">^</button>
+
+
   <div class="container">
 
+    <!-- Hero Section -->
     <header class="hero">
       <img src="gagn.jpg" alt="Gagan M" class="profile-pic" />
       <h1>Gagan M</h1>
-      <p>Data Analyst • ML & AI Enthusiast</p>
+      <p class="tagline">AI Engineer | Data Analyst </p>
       <div class="social-links">
-        <a href="https://github.com/yourusername" target="_blank">GitHub</a>
-        <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
+        <a href="https://github.com/Gagan7411" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/gagan-m-46997a289?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn</a>
         <a href="resume.pdf" download class="resume-button">Download Resume</a>
       </div>
     </header>
 
+    <!-- Navigation -->
     <nav>
       <a href="#about">About</a>
-      <a href="#projects">Internships</a>
+      <a href="#projects">Projects</a>
+      <a href="#internships">Internships</a>
       <a href="#skills">Skills</a>
       <a href="#contact">Contact</a>
     </nav>
 
+    <!-- About Section -->
     <section id="about">
       <h2>About Me</h2>
       <div class="glass-card">
-        <p>I’m Gagan M, a curious mind in the field of Data Analytics, Machine Learning, and AI. I’ve completed internships in <strong>Data Analytics using AI</strong> and <strong>ML & AI</strong>, exploring the intersection of technology and insight-driven decision-making.</p>
+        <p>
+          I'm <strong>Gagan M</strong>, a BCA graduate passionate about building intelligent systems
+          with <strong>Artificial Intelligence</strong>, <strong>Data Analytics</strong>. My expertise spans Python, AI/ML, full-stack development, 
+          and data-driven problem solving. I aim to create innovative solutions that make a meaningful impact.
+        </p>
       </div>
     </section>
 
+    <!-- Projects Section -->
     <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="glass-card">
+          <h3>AI Voice Assistant</h3>
+          <p>
+            Developed a Python-based voice assistant using libraries like 
+            <strong>pyttsx3</strong> and <strong>speechrecognition</strong>, capable of playing music, 
+            fetching real-time info, and performing tasks with voice commands.
+          </p>
+        </div>
+        <div class="glass-card">
+          <h3>Dental Clinic Website</h3>
+          <p>
+            Built a complete website with user and admin modules using 
+            <strong>Node.js</strong>, <strong>Express</strong>, and <strong>MongoDB</strong> 
+            to streamline clinic management and appointments.
+          </p>
+        </div>
+        <div class="glass-card">
+          <h3>AI Insight Pen</h3>
+          <p>
+            Designed a research concept for an AI-powered pen like Google Lens, 
+            capable of instantly translating and explaining text from any screen using Android Studio.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Internships Section -->
+    <section id="internships">
       <h2>Internships</h2>
       <div class="glass-card">
-        <h3>Data Analytics Using AI</h3>
-        <p>Explored analytical tools powered by AI for data-driven business solutions. Focused on data cleaning, visualization, and deriving insights.</p>
-      </div>
-      <div class="glass-card">
-        <h3>ML & AI Internship</h3>
-        <p>Worked on classification and prediction models using Python and libraries like Scikit-learn. Gained hands-on experience in model training and evaluation.</p>
+        <h3>Novi-tech R&D Pvt Ltd</h3>
+        <p>
+          Worked on data analytics and AI/ML use-cases, gaining hands-on experience in 
+          <strong>data visualization</strong>, <strong>predictive analysis</strong>, and 
+          <strong>data cleaning</strong>.
+        </p>
       </div>
     </section>
 
+    <!-- Skills Section -->
     <section id="skills">
       <h2>Skills</h2>
       <div class="glass-card skill-tags">
         <span>Python</span>
-        <span>Pandas</span>
-        <span>NumPy</span>
-        <span>Matplotlib</span>
-        <span>Machine Learning</span>
-        <span>Artificial Intelligence</span>
-        <span>Power BI</span>
+        <span>AI/ML</span>
+        <span>GitHub</span>
         <span>SQL</span>
         <span>Data Visualization</span>
+        <span>Docker</span>
+        <span>NLP</span>
+        <span>MongoDB</span>
       </div>
     </section>
 
+    <!-- Contact Section -->
     <section id="contact">
       <h2>Contact</h2>
       <div class="glass-card">
-        <form>
-          <input type="text" placeholder="Your Name" required />
-          <input type="email" placeholder="Your Email" required />
-          <textarea rows="5" placeholder="Your Message" required></textarea>
-          <button type="submit">Send Message</button>
-        </form>
+        
+          <form action="https://formsubmit.co/mgagan8792@gmail.com" method="POST">
+  <!-- To prevent spam -->
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_template" value="table">
+
+  <input type="text" name="name" placeholder="Your Name" required />
+  <input type="email" name="email" placeholder="Your Email" required />
+  <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+  
+  <button type="submit">Send Message</button>
+</form>
+
+
       </div>
     </section>
 
+    <!-- Footer -->
     <footer>
-      &copy; 2025 Gagan M. Built with ❤️ and curiosity.
+      &copy; 2025 Gagan M. Built with ❤️.
     </footer>
 
   </div>
+
+  <!-- Chatbot Widget -->
+<div class="chatbot-container">
+  <div class="chatbot-header">
+    <span>Chat with Gagan 🤖</span>
+    <button id="chatbotToggle">_</button>
+  </div>
+  <div class="chatbot-body" id="chatbotBody">
+    <div class="messages" id="chatbotMessages">
+      <div class="message bot">Hi! I'm Gagan's assistant. How can I help you today?</div>
+    </div>
+    <div class="chat-input">
+      <input type="text" id="chatbotInput" placeholder="Type a message..." />
+      <button id="chatbotSend">➤</button>
+    </div>
+  </div>
+</div>
+
+<!-- Floating Chatbot Button -->
+<button class="chatbot-float-btn" id="chatbotFloatBtn">💬</button>
+
+
+  <script src="script.js"></script>
 </body>
 </html>
